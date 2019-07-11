@@ -4,6 +4,8 @@
 ![](https://img.shields.io/github/license/noltron000/library-challenge.svg)
 ![](https://img.shields.io/twitter/url/https/github.com%2Fnoltron000%2Flibrary-challenge.svg)
 
+## check it out on [`npm`](https://www.npmjs.com/package/cool-text-package)!
+
 1. `String.prototype.upperFirst`Write a function that uppercases the first character of string
 1. `String.prototype.lowerFirst` 
 1. `String.prototype.upperWord`Write a function that uppercases the first letter of each word in a string
