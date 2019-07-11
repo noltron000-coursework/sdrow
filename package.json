@@ -1,25 +1,25 @@
 {
-  "name": "cool-text-package",
-  "version": "0.0.1",
-  "description": "these are amazing utilities that everyone should use.",
-  "main": "problems.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/noltron000/library-challenge.git"
-  },
-  "keywords": [
-    "cool",
-    "text",
-    "package",
-    "library"
-  ],
-  "author": "noltron000",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/noltron000/library-challenge/issues"
-  },
-  "homepage": "https://github.com/noltron000/library-challenge#readme"
+	"name": "cool-text-package",
+	"version": "0.0.2",
+	"description": "these are amazing utilities that everyone should use.",
+	"main": "problems.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/noltron000/library-challenge.git"
+	},
+	"keywords": [
+		"cool",
+		"text",
+		"package",
+		"library"
+	],
+	"author": "noltron000",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/noltron000/library-challenge/issues"
+	},
+	"homepage": "https://github.com/noltron000/library-challenge#readme"
 }
