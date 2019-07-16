@@ -1,6 +1,6 @@
 {
 	"name": "cool-text-package",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "these are amazing utilities that everyone should use.",
 	"main": "problems.js",
 	"scripts": {
