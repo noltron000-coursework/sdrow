@@ -4,7 +4,7 @@
 	"description": "these are amazing utilities that everyone should use.",
 	"main": "problems.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
+		"test": "jest",
 		"coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
 	},
 	"repository": {
@@ -24,6 +24,7 @@
 	},
 	"homepage": "https://github.com/noltron000/library-challenge#readme",
 	"devDependencies": {
-		"coveralls": "^3.0.5"
+		"coveralls": "^3.0.5",
+		"jest": "^24.8.0"
 	}
 }
