@@ -2,6 +2,7 @@
 ![](https://img.shields.io/github/forks/noltron000/library-challenge.svg)
 ![](https://img.shields.io/github/stars/noltron000/library-challenge.svg)
 ![](https://img.shields.io/github/license/noltron000/library-challenge.svg)
+[![Coverage Status](https://coveralls.io/repos/github/noltron000/library-challenge/badge.svg?branch=master)](https://coveralls.io/github/noltron000/library-challenge?branch=master)
 ![](https://img.shields.io/twitter/url/https/github.com%2Fnoltron000%2Flibrary-challenge.svg)
 
 ## check it out on [`npm`](https://www.npmjs.com/package/cool-text-package)!
