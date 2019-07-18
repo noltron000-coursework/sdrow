@@ -1,10 +1,11 @@
 {
 	"name": "cool-text-package",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "these are amazing utilities that everyone should use.",
 	"main": "problems.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
 	},
 	"repository": {
 		"type": "git",
@@ -21,5 +22,8 @@
 	"bugs": {
 		"url": "https://github.com/noltron000/library-challenge/issues"
 	},
-	"homepage": "https://github.com/noltron000/library-challenge#readme"
+	"homepage": "https://github.com/noltron000/library-challenge#readme",
+	"devDependencies": {
+		"coveralls": "^3.0.5"
+	}
 }
