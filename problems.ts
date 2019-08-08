@@ -89,13 +89,3 @@ String.prototype.camelCase = function() {
 		.removeSpaces()
 		.lowerFirst()
 }
-
-console.log('PROBLEM 1:', 'javascript libraries'.upperFirst())
-console.log('PROBLEM 2:', 'javascript libraries'.upperWord())
-console.log('PROBLEM 3:', 'javascript libraries'.upperWiggle())
-console.log('PROBLEM 4:', '  javascript  libraries        '.removeSpaces())
-console.log('PROBLEM 5:', '  javascript  libraries        '.trimSpaces())
-console.log('PROBLEM 6:', 'javascript libraries'.allCaps())
-console.log('PROBLEM 7:', 'javascript libraries'.kababCase())
-console.log('PROBLEM 8:', 'javascript libraries'.snakeCase())
-console.log('PROBLEM 9:', 'javascript libraries'.camelCase())
