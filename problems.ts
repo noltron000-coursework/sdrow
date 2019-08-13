@@ -1,32 +1,30 @@
-declare global {
-	interface String {
-		upperFirst(): String
-		lowerFirst(): String
-		upperWord(): String
-		upperWiggle(): String
-		removeSpaces(): String
-		trimSpaces(): String
-		allCaps(): String
-		kababCase(): String
-		snakeCase(): String
-		camelCase(): String
-	}
+declare interface String {
+	upperFirst(): string
+	lowerFirst(): string
+	upperWord(): string
+	upperWiggle(): string
+	removeSpaces(): string
+	trimSpaces(): string
+	allCaps(): string
+	kababCase(): string
+	snakeCase(): string
+	camelCase(): string
 }
 
 // PROBLEM 1
-String.prototype.upperFirst = function() {
+String.prototype.upperFirst = function(): string {
 	return this.charAt(0).toUpperCase() + this.slice(1)
 }
 
-String.prototype.lowerFirst = function() {
+String.prototype.lowerFirst = function(): string {
 	return this.charAt(0).toLowerCase() + this.slice(1)
 }
 
 // PROBLEM 2
-String.prototype.upperWord = function() {
-	const wordList = this.split(' ')
-	let finalString = ''
-	wordList.forEach((word) => {
+String.prototype.upperWord = function(): string {
+	const wordList: string[] = this.split(' ')
+	let finalString: string = ''
+	wordList.forEach((word: string) => {
 		const result = word.upperFirst()
 		finalString = finalString.concat(result, ' ')
 	})
@@ -34,7 +32,7 @@ String.prototype.upperWord = function() {
 }
 
 // PROBLEM 3
-String.prototype.upperWiggle = function() {
+String.prototype.upperWiggle = function(): string {
 	let finalString = ''
 	Array.from(this).forEach((letter, index) => {
 		if (index % 2 === 0) {
@@ -48,24 +46,24 @@ String.prototype.upperWiggle = function() {
 }
 
 // PROBLEM 4
-String.prototype.removeSpaces = function() {
+String.prototype.removeSpaces = function(): string {
 	return this.replace(/\s/g, '')
 }
 
 // PROBLEM 5
-String.prototype.trimSpaces = function() {
+String.prototype.trimSpaces = function(): string {
 	return this.split(/\s+/)
 		.join(' ')
 		.trim()
 }
 
 // PROBLEM 6
-String.prototype.allCaps = function() {
+String.prototype.allCaps = function(): string {
 	return this.toUpperCase()
 }
 
 // PROBLEM 7
-String.prototype.kababCase = function() {
+String.prototype.kababCase = function(): string {
 	return this.toLowerCase()
 		.split(/\s+/)
 		.join(' ')
@@ -74,7 +72,7 @@ String.prototype.kababCase = function() {
 }
 
 // PROBLEM 8
-String.prototype.snakeCase = function() {
+String.prototype.snakeCase = function(): string {
 	return this.toLowerCase()
 		.split(/\s+/)
 		.join(' ')
@@ -83,7 +81,7 @@ String.prototype.snakeCase = function() {
 }
 
 // PROBLEM 9
-String.prototype.camelCase = function() {
+String.prototype.camelCase = function(): string {
 	return this.trimSpaces()
 		.upperWord()
 		.removeSpaces()
