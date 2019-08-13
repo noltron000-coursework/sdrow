@@ -4,6 +4,8 @@
 	"description": "these are amazing utilities that everyone should use.",
 	"main": "problems.js",
 	"scripts": {
+		"build": "tsc *.ts ; npm run minify",
+		"minify": "uglifyjs problems.js -c -m -o problems.js ; uglifyjs problems.test.js -c -m -o problems.test.js",
 		"test": "jest",
 		"coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
 	},
@@ -28,6 +30,7 @@
 		"jest": "^24.8.0",
 		"rollup": "^1.18.0",
 		"rollup-plugin-typescript2": "^0.22.1",
-		"typescript": "^3.5.3"
+		"typescript": "^3.5.3",
+		"uglify-js": "^3.6.0"
 	}
 }
