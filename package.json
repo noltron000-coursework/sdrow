@@ -4,7 +4,7 @@
 	"description": "these are amazing utilities that everyone should use.",
 	"main": "problems.js",
 	"scripts": {
-		"build": "tsc *.ts ; npm run minify ; jest test",
+		"build": "tsc *.ts ; npm run minify ; jest --coverage",
 		"minify": "uglifyjs problems.js -c -m -o problems.js ; uglifyjs problems.test.js -c -m -o problems.test.js",
 		"test": "jest",
 		"coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
