@@ -1,6 +1,6 @@
 {
 	"name": "cool-text-package",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "these are amazing utilities that everyone should use.",
 	"main": "problems.js",
 	"scripts": {
@@ -11,7 +11,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/noltron000/library-challenge.git"
+		"url": "git+https://github.com/noltron000/string-library.git"
 	},
 	"keywords": [
 		"cool",
