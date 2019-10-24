@@ -1,13 +1,14 @@
-/*
 // PROBLEM 1
-String.prototype.upperFirst = function(): string {
-	return this.charAt(0).toUpperCase() + this.slice(1)
+const capWord = (word: string): string => {
+	return word.charAt(0).toUpperCase()
+	+ word.slice(1).toLowerCase()
 }
 
 String.prototype.lowerFirst = function(): string {
 	return this.charAt(0).toLowerCase() + this.slice(1)
 }
 
+/*
 // PROBLEM 2
 String.prototype.upperWord = function(): string {
 	const wordList: string[] = this.split(' ')
