@@ -1,36 +1,26 @@
 {
-	"name": "cool-text-package",
-	"version": "0.1.1",
+	"name": "sdrow",
+	"version": "0.2.0",
 	"description": "these are amazing utilities that everyone should use.",
 	"main": "problems.js",
-	"scripts": {
-		"build": "tsc *.ts ; npm run minify ; jest --coverage",
-		"minify": "uglifyjs problems.js -c -m -o problems.js ; uglifyjs problems.test.js -c -m -o problems.test.js",
-		"test": "jest",
-		"coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
-	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/noltron000/string-library.git"
+		"url": "git+https://github.com/noltron000/sdrow.git"
 	},
 	"keywords": [
 		"cool",
 		"text",
 		"package",
-		"library"
+		"library",
+		"sdrow"
 	],
 	"author": "noltron000",
-	"license": "ISC",
+	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/noltron000/library-challenge/issues"
 	},
 	"homepage": "https://github.com/noltron000/library-challenge#readme",
-	"devDependencies": {
-		"coveralls": "^3.0.5",
-		"jest": "^24.8.0",
-		"rollup": "^1.18.0",
-		"rollup-plugin-typescript2": "^0.22.1",
-		"typescript": "^3.5.3",
-		"uglify-js": "^3.6.0"
-	}
+	"devDependencies": {},
+	"dependencies": {},
+	"scripts": {}
 }
