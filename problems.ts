@@ -1,16 +1,4 @@
-declare interface String {
-	upperFirst(): string
-	lowerFirst(): string
-	upperWord(): string
-	upperWiggle(): string
-	removeSpaces(): string
-	trimSpaces(): string
-	allCaps(): string
-	kababCase(): string
-	snakeCase(): string
-	camelCase(): string
-}
-
+/*
 // PROBLEM 1
 String.prototype.upperFirst = function(): string {
 	return this.charAt(0).toUpperCase() + this.slice(1)
@@ -87,3 +75,4 @@ String.prototype.camelCase = function(): string {
 		.removeSpaces()
 		.lowerFirst()
 }
+*/
