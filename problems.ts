@@ -4,13 +4,21 @@ const capWord = (word: string): string => {
 	+ word.slice(1).toLowerCase()
 }
 
-String.prototype.lowerFirst = function(): string {
-	return this.charAt(0).toLowerCase() + this.slice(1)
+const uncapWord = (word: string): string => {
+	return word.toLowerCase()
+}
+
+const upperWord = (word: string): string => {
+	return word.toUpperCase()
+}
+
+const lowerWord = (word: string): string => {
+	return word.toLowerCase()
 }
 
 /*
 // PROBLEM 2
-String.prototype.upperWord = function(): string {
+const upperWord = (word: string): string => {
 	const wordList: string[] = this.split(' ')
 	let finalString: string = ''
 	wordList.forEach((word: string) => {
