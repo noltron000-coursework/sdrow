@@ -65,22 +65,21 @@ const lowerCase = (sentence: string): string => {
 	return sentence
 }
 
-
-/*
 // PROBLEM 3
-String.prototype.upperWiggle = function(): string {
-	let finalString = ''
-	Array.from(this).forEach((letter, index) => {
+const wiggleWord = (word: string): string => {
+	let result = ''
+	Array.from(word).forEach((letter, index) => {
 		if (index % 2 === 0) {
-			letter = letter.toUpperCase()
-		} else {
 			letter = letter.toLowerCase()
+		} else {
+			letter = letter.toUpperCase()
 		}
-		finalString = finalString.concat(letter)
+		result += letter
 	})
-	return finalString
+	return result
 }
 
+/*
 // PROBLEM 4
 String.prototype.removeSpaces = function(): string {
 	return this.replace(/\s/g, '')
