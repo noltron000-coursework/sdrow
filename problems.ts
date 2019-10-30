@@ -20,49 +20,49 @@ const lowerWord = (word: string): string => {
 const capCase = (sentence: string): string => {
 	// // get a list of all words and seperators
 	// const {words, seperators} = deconstruct(sentence)
+	let result = ''
 	const words: string[] = sentence.split(' ')
-	sentence = ''
 	for (let word of words) {
 		word = capWord(word)
-		sentence = sentence.concat(word, ' ')
+		result = result.concat(word, ' ')
 	}
-	return sentence
+	return result
 }
 
 const uncapCase = (sentence: string): string => {
 	// // get a list of all words and seperators
 	// const {words, seperators} = deconstruct(sentence)
+	let result = ''
 	const words: string[] = sentence.split(' ')
-	sentence = ''
 	for (let word of words) {
 		word = uncapWord(word)
-		sentence = sentence.concat(word, ' ')
+		result = result.concat(word, ' ')
 	}
-	return sentence
+	return result
 }
 
 const upperCase = (sentence: string): string => {
 	// // get a list of all words and seperators
 	// const {words, seperators} = deconstruct(sentence)
+	let result = ''
 	const words: string[] = sentence.split(' ')
-	sentence = ''
 	for (let word of words) {
 		word = upperWord(word)
-		sentence = sentence.concat(word, ' ')
+		result = result.concat(word, ' ')
 	}
-	return sentence
+	return result
 }
 
 const lowerCase = (sentence: string): string => {
 	// // get a list of all words and seperators
 	// const {words, seperators} = deconstruct(sentence)
+	let result = ''
 	const words: string[] = sentence.split(' ')
-	sentence = ''
 	for (let word of words) {
 		word = lowerWord(word)
-		sentence = sentence.concat(word, ' ')
+		result = result.concat(word, ' ')
 	}
-	return sentence
+	return result
 }
 
 // PROBLEM 3
