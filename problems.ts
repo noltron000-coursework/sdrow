@@ -20,12 +20,12 @@ const lowerWord = (word: string): string => {
 const capCase = (sentence: string): string => {
 	// // get a list of all words and seperators
 	// const {words, seperators} = deconstruct(sentence)
-	const words: string[] = sentence.split()
+	const words: string[] = sentence.split(' ')
 	sentence = ''
-	words.forEach((word: string) => {
-		word = word.upperFirst()
+	for (let word of words) {
+		word = capWord(word)
 		sentence = sentence.concat(word, ' ')
-	})
+	}
 	return sentence
 }
 
