@@ -92,12 +92,14 @@ const wiggleWord = (word: string): string => {
 	return result
 }
 
-/*
 // PROBLEM 4
-String.prototype.removeSpaces = function(): string {
-	return this.replace(/\s/g, '')
+const removeSpaces = (word: string): string => {
+	// /\s selects any sort of whitespace
+	// /g stands for a global search
+	return word.replace(/\s/g, '')
 }
 
+/*
 // PROBLEM 5
 String.prototype.trimSpaces = function(): string {
 	return this.split(/\s+/)
