@@ -17,52 +17,33 @@ const lowerWord = (word: string): string => {
 }
 
 // PROBLEM 2
-const capCase = (sentence: string): string => {
-	// // get a list of all words and seperators
-	// const {words, seperators} = deconstruct(sentence)
-	let result = ''
+// ==TODO==
+// determine what `type` that a function is;
+// it is passed in as a parameter!
+const caseCase = (sentence: string, lambda: any) => {
+	let result: string = ''
 	const words: string[] = sentence.split(' ')
 	for (let word of words) {
-		word = capWord(word)
+		word = lambda(word)
 		result = result.concat(word, ' ')
 	}
 	return result
+}
+
+const capCase = (sentence: string): string => {
+	return caseCase(sentence, capWord)
 }
 
 const uncapCase = (sentence: string): string => {
-	// // get a list of all words and seperators
-	// const {words, seperators} = deconstruct(sentence)
-	let result = ''
-	const words: string[] = sentence.split(' ')
-	for (let word of words) {
-		word = uncapWord(word)
-		result = result.concat(word, ' ')
-	}
-	return result
+	return caseCase(sentence, uncapWord)
 }
 
 const upperCase = (sentence: string): string => {
-	// // get a list of all words and seperators
-	// const {words, seperators} = deconstruct(sentence)
-	let result = ''
-	const words: string[] = sentence.split(' ')
-	for (let word of words) {
-		word = upperWord(word)
-		result = result.concat(word, ' ')
-	}
-	return result
+	return caseCase(sentence, upperWord)
 }
 
 const lowerCase = (sentence: string): string => {
-	// // get a list of all words and seperators
-	// const {words, seperators} = deconstruct(sentence)
-	let result = ''
-	const words: string[] = sentence.split(' ')
-	for (let word of words) {
-		word = lowerWord(word)
-		result = result.concat(word, ' ')
-	}
-	return result
+	return caseCase(sentence, lowerWord)
 }
 
 // PROBLEM 3
