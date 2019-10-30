@@ -29,6 +29,43 @@ const capCase = (sentence: string): string => {
 	return sentence
 }
 
+const uncapCase = (sentence: string): string => {
+	// // get a list of all words and seperators
+	// const {words, seperators} = deconstruct(sentence)
+	const words: string[] = sentence.split(' ')
+	sentence = ''
+	for (let word of words) {
+		word = uncapWord(word)
+		sentence = sentence.concat(word, ' ')
+	}
+	return sentence
+}
+
+const upperCase = (sentence: string): string => {
+	// // get a list of all words and seperators
+	// const {words, seperators} = deconstruct(sentence)
+	const words: string[] = sentence.split(' ')
+	sentence = ''
+	for (let word of words) {
+		word = upperWord(word)
+		sentence = sentence.concat(word, ' ')
+	}
+	return sentence
+}
+
+const lowerCase = (sentence: string): string => {
+	// // get a list of all words and seperators
+	// const {words, seperators} = deconstruct(sentence)
+	const words: string[] = sentence.split(' ')
+	sentence = ''
+	for (let word of words) {
+		word = lowerWord(word)
+		sentence = sentence.concat(word, ' ')
+	}
+	return sentence
+}
+
+
 /*
 // PROBLEM 3
 String.prototype.upperWiggle = function(): string {
