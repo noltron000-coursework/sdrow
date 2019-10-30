@@ -75,19 +75,20 @@ const wiggleWord = (word: string): string => {
 
 // PROBLEM 4
 const removeSpaces = (word: string): string => {
-	// /\s selects any sort of whitespace
+	// /\s selects any sort of whitespace character
 	// /g stands for a global search
 	return word.replace(/\s/g, '')
 }
 
-/*
 // PROBLEM 5
-String.prototype.trimSpaces = function(): string {
-	return this.split(/\s+/)
-		.join(' ')
-		.trim()
+const trimSpaces = (word: string): string => {
+	// /\s+ selects any consecutive occurence of whitespace
+	// /g stands for a global search
+	// trim removes whitespace before/after other characters
+	return word.replace(/\s+/g, ' ').trim()
 }
 
+/*
 // PROBLEM 6
 String.prototype.allCaps = function(): string {
 	return this.toUpperCase()
