@@ -16,18 +16,20 @@ const lowerWord = (word: string): string => {
 	return word.toLowerCase()
 }
 
-/*
 // PROBLEM 2
-const upperWord = (word: string): string => {
-	const wordList: string[] = this.split(' ')
-	let finalString: string = ''
-	wordList.forEach((word: string) => {
-		const result = word.upperFirst()
-		finalString = finalString.concat(result, ' ')
+const capCase = (sentence: string): string => {
+	// // get a list of all words and seperators
+	// const {words, seperators} = deconstruct(sentence)
+	const words: string[] = sentence.split()
+	sentence = ''
+	words.forEach((word: string) => {
+		word = word.upperFirst()
+		sentence = sentence.concat(word, ' ')
 	})
-	return finalString.slice(0, -1)
+	return sentence
 }
 
+/*
 // PROBLEM 3
 String.prototype.upperWiggle = function(): string {
 	let finalString = ''
