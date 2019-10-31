@@ -2,35 +2,42 @@ import * as sdrow from './sdrow'
 
 test('sanity check', () => {})
 
-test('capitalize a word', () => {
+test('capWord():\n\tcapitalize a word', () => {
 	const before: string = 'capitalize'
 	const after: string = sdrow.capWord(before)
 	expect(before).toBe('capitalize')
 	expect(after).toBe('Capitalize')
 })
 
-test('capitalize entire word', () => {
-	const before: string = 'capitalize'
+test('upperWord():\n\tcapitalize entire word', () => {
+	const before: string = 'uppercase'
 	const after: string = sdrow.upperWord(before)
-	expect(before).toBe('capitalize')
-	expect(after).toBe('CAPITALIZE')
+	expect(before).toBe('uppercase')
+	expect(after).toBe('UPPERCASE')
 })
 
-test('decapitalize entire word', () => {
+test('lowerWord():\n\tdecapitalize entire word', () => {
 	const before: string = 'LOWERCASE'
 	const after: string = sdrow.lowerWord(before)
 	expect(before).toBe('LOWERCASE')
 	expect(after).toBe('lowercase')
 })
 
-/*
-test('Upper- & Lower-first-word', () => {
-	const bfr = 'this is upper Word first'
-	const aft = 'This is upper Word first'
-	expect(bfr.upperFirst()).toBe(aft)
-	expect(aft.lowerFirst()).toBe(bfr)
+test('jiggleWord():\n\tJiGlIfY A WoRd! WoAh!', () => {
+	const before: string = 'jiggLY'
+	const after: string = sdrow.jiggleWord(before)
+	expect(before).toBe('jiggLY')
+	expect(after).toBe('JiGgLy')
 })
 
+test('wiggleWord():\n\twIgGlIfY a wOrD. nUtSo!', () => {
+	const before: string = 'WIggly'
+	const after: string = sdrow.wiggleWord(before)
+	expect(before).toBe('WIggly')
+	expect(after).toBe('wIgGlY')
+})
+
+/*
 test('Upper- every words', () => {
 	const bfr = 'this is upper EVERY word'
 	const aft = 'This Is Upper EVERY Word'
