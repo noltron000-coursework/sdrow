@@ -74,20 +74,20 @@ const wiggleWord = (word: string): string => {
 }
 
 // PROBLEM 4
-const removeSpaces = (word: string): string => {
-	// /\s+ selects any consecutive occurence of whitespace
-	// /g stands for a global search
-	// replace it with empty string
-	return word.replace(/\s+/g, '')
+const removeSpaces = (sentence: string): string => {
+	// replace any number of spaces with an empty string.
+	// `/\s+` selects consecutive occurences of whitespace.
+	// `/g` stands for a global search.
+	return sentence.replace(/\s+/g, '')
 }
 
 // PROBLEM 5
-const trimSpaces = (word: string): string => {
-	// /\s+ selects any consecutive occurence of whitespace
-	// /g stands for a global search
-	// replace it with a single space
-	// trim removes whitespace before/after other characters
-	return word.replace(/\s+/g, ' ').trim()
+const trimSpaces = (sentence: string): string => {
+	// replace any number of spaces with a single space.
+	// then, trim extra spaces before/after the sentence.
+	// `/\s+` selects consecutive occurences of whitespace.
+	// `/g` stands for a global search.
+	return sentence.replace(/\s+/g, ' ').trim()
 }
 
 /*
