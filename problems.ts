@@ -40,7 +40,7 @@ const lowerCase = (sentence: string): string => {
 
 // PROBLEM 3
 const jiggleWord = (word: string): string => {
-	let result = ''
+	let result: string = ''
 	Array.from(word).forEach((letter, index) => {
 		if (index % 2 === 0) {
 			letter = letter.toUpperCase()
@@ -53,7 +53,7 @@ const jiggleWord = (word: string): string => {
 }
 
 const wiggleWord = (word: string): string => {
-	let result = ''
+	let result: string = ''
 	Array.from(word).forEach((letter, index) => {
 		if (index % 2 === 1) {
 			letter = letter.toUpperCase()
