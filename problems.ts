@@ -1,4 +1,3 @@
-// PROBLEM 1
 const capWord = (word: string): string => {
 	return word.charAt(0).toUpperCase()
 	+ word.slice(1).toLowerCase()
@@ -12,7 +11,6 @@ const lowerWord = (word: string): string => {
 	return word.toLowerCase()
 }
 
-// PROBLEM 3
 const jiggleWord = (word: string): string => {
 	let result: string = ''
 	Array.from(word).forEach((letter, index) => {
@@ -39,7 +37,6 @@ const wiggleWord = (word: string): string => {
 	return result
 }
 
-// PROBLEM 4
 const removeSpaces = (sentence: string): string => {
 	// replace any number of spaces with an empty string.
 	// `/\s+` selects consecutive occurences of whitespace.
@@ -47,7 +44,6 @@ const removeSpaces = (sentence: string): string => {
 	return sentence.replace(/\s+/g, '')
 }
 
-// PROBLEM 5
 const trimSpaces = (sentence: string): string => {
 	// replace any number of spaces with a single space.
 	// then, trim extra spaces before/after the sentence.
@@ -56,7 +52,6 @@ const trimSpaces = (sentence: string): string => {
 	return sentence.replace(/\s+/g, ' ').trim()
 }
 
-// PROBLEM 2
 // ==TODO==
 // determine what `type` that a function is;
 // it is passed in as a parameter!
@@ -82,19 +77,16 @@ const lowerCase = (sentence: string): string => {
 	return caseCase(sentence, lowerWord)
 }
 
-// PROBLEM 7
 const kababCase = (sentence: string): string => {
 	let result: string = trimSpaces(lowerCase(sentence))
 	return result.replace(/\s/g, '-')
 }
 
-// PROBLEM 8
 const snakeCase = (sentence: string): string => {
 	let result: string = trimSpaces(lowerCase(sentence))
 	return result.replace(/\s/g, '_')
 }
 
-// PROBLEM 9
 const camelCase = (sentence: string): string => {
 	let result: string = removeSpaces(capCase(sentence))
 	result = result.charAt(0).toLowerCase()
