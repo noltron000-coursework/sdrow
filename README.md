@@ -1,14 +1,16 @@
-![](https://img.shields.io/github/issues/noltron000/library-challenge.svg)
-![](https://img.shields.io/github/forks/noltron000/library-challenge.svg)
-![](https://img.shields.io/github/stars/noltron000/library-challenge.svg)
-![](https://img.shields.io/github/license/noltron000/library-challenge.svg)
-[![Coverage Status](https://coveralls.io/repos/github/noltron000/library-challenge/badge.svg?branch=master)](https://coveralls.io/github/noltron000/library-challenge?branch=master)
-![](https://img.shields.io/twitter/url/https/github.com%2Fnoltron000%2Flibrary-challenge.svg)
+![](https://img.shields.io/github/issues/noltron000/sdrow.svg)
+![](https://img.shields.io/github/forks/noltron000/sdrow.svg)
+![](https://img.shields.io/github/stars/noltron000/sdrow.svg)
+![](https://img.shields.io/github/license/noltron000/sdrow.svg)
+[![Coverage Status](https://coveralls.io/repos/github/noltron000/sdrow/badge.svg?branch=master)](https://coveralls.io/github/noltron000/sdrow?branch=master)
+![](https://img.shields.io/twitter/url/https/github.com%2Fnoltron000%2Fsdrow.svg)
 
-## check it out on [`npm`](https://www.npmjs.com/package/cool-text-package)!
+# `SDORW`: super dangerous or ridiculous words
+## check it out on [`npm`](https://www.npmjs.com/package/sdrow)!
+<!--
+!THIS BLOCK HAS BEEN INVALIDATED!
 
-### Features
-
+## Features
 1. `String.prototype.upperFirst( )` A function that uppercases the first character of string.
 	- Example Input: `i want this capitalized.`
 	- Expected Output: `I want this capitalized.`
@@ -24,7 +26,7 @@
 1. `String.prototype.removeSpaces( )` A function that removes all whitespace from a given string.
 	- Example Input: `try to decode this!`
 	- Expected Output: `trytodecodethis!`
-1. `String.prototype.trimSpaces( )` A function that removes only the extra whitespace from a given string (example: `“ a b ” → “a b”`).
+1. `String.prototype.trimSpaces( )` A function that removes only the extra whitespace from a given string (example: `" a b " → "a b"`).
 	- Example Input: `far out`
 	- Expected Output: `far out`
 1. `String.prototype.allCaps( )` A function that makes all characters uppercase. (this is the same as `.toUppercase()`).
@@ -42,14 +44,13 @@
 
 See [Homework 1](https://github.com/Make-School-Courses/FEW-2.1-Writing-JavaScript-Libraries/blob/master/Assignments/assignment-1-string-lib.md)
 
-### Usage
-
+## Usage
 Just connect any of those functions to a string and see magic! Note, none of these functions take in a parameter. They are methods.
 
 Example:
-
 ```js
 let superString =
 	'wow! this project is    soooooooooooo   cool. Just amazing.    '
 console.log(superString.snakeCase())
 ```
+--->
