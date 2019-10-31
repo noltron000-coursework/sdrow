@@ -56,28 +56,32 @@ test('trimSpaces():\n\t(extra) spaces...begone!', () => {
 })
 
 // *BELOW ARE ALL SENTENCE-BASED FUNCTIONS* //
-test('upperCase():\n\t', () => {
-	const before: string = ''
-	const after: string = ''
-	expect(true).toBe(false)
+test('upperCase():\n\tcapitalize all letters', () => {
+	const before: string = 'I am a MOSTLY lowercase sentence.'
+	const after: string = sdrow.upperCase(before)
+	expect(before).toBe('I am a MOSTLY lowercase sentence.')
+	expect(after).toBe('I AM A MOSTLY LOWERCASE SENTENCE.')
 })
 
-test('lowerCase():\n\t', () => {
-	const before: string = ''
-	const after: string = ''
-	expect(true).toBe(false)
+test('lowerCase():\n\tdecapitalize all letters', () => {
+	const before: string = 'I am a MOSTLY lowercase sentence.'
+	const after: string = sdrow.lowerCase(before)
+	expect(before).toBe('I am a MOSTLY lowercase sentence.')
+	expect(after).toBe('i am a mostly lowercase sentence.')
 })
 
-test('jiggleCase():\n\t', () => {
-	const before: string = ''
-	const after: string = ''
-	expect(true).toBe(false)
+test('jiggleCase():\n\tjiggle it up', () => {
+	const before: string = 'I am a MOSTLY lowercase sentence.'
+	const after: string = sdrow.jiggleCase(before)
+	expect(before).toBe('I am a MOSTLY lowercase sentence.')
+	expect(after).toBe('I Am A MoStLy LoWeRcAsE SeNtEnCe.')
 })
 
-test('wiggleCase():\n\t', () => {
-	const before: string = ''
-	const after: string = ''
-	expect(true).toBe(false)
+test('wiggleCase():\n\twiggle it up', () => {
+	const before: string = 'I am a MOSTLY lowercase sentence.'
+	const after: string = sdrow.wiggleCase(before)
+	expect(before).toBe('I am a MOSTLY lowercase sentence.')
+	expect(after).toBe('i aM a mOsTlY lOwErCaSe sEnTeNcE.')
 })
 
 test('kababCase():\n\t', () => {

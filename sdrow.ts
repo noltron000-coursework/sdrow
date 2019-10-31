@@ -62,7 +62,7 @@ export const caseCase = (sentence: string, lambda: any): string => {
 		word = lambda(word)
 		result = result.concat(word, ' ')
 	}
-	return result
+	return result.trim()
 }
 
 const capCase = (sentence: string): string => {
@@ -78,11 +78,11 @@ export const lowerCase = (sentence: string): string => {
 }
 
 export const jiggleCase = (sentence: string): string => {
-	return caseCase(sentence, lowerWord)
+	return caseCase(sentence, jiggleWord)
 }
 
 export const wiggleCase = (sentence: string): string => {
-	return caseCase(sentence, lowerWord)
+	return caseCase(sentence, wiggleWord)
 }
 
 export const kababCase = (sentence: string): string => {
