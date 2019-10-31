@@ -82,30 +82,26 @@ const trimSpaces = (sentence: string): string => {
 	return sentence.replace(/\s+/g, ' ').trim()
 }
 
-/*
 // PROBLEM 7
-String.prototype.kababCase = function(): string {
-	return this.toLowerCase()
-		.split(/\s+/)
-		.join(' ')
-		.trim()
-		.replace(/\s+/g, '-')
+const kababCase = (sentence: string): string => {
+	let result: string = trimSpaces(lowerCase(sentence))
+	return result.replace(/\s/g, '-')
 }
 
 // PROBLEM 8
-String.prototype.snakeCase = function(): string {
-	return this.toLowerCase()
-		.split(/\s+/)
-		.join(' ')
-		.trim()
-		.replace(/\s+/g, '_')
+const snakeCase = (sentence: string): string => {
+	let result: string = trimSpaces(lowerCase(sentence))
+	return result.replace(/\s/g, '_')
 }
 
 // PROBLEM 9
-String.prototype.camelCase = function(): string {
-	return this.trimSpaces()
-		.upperWord()
-		.removeSpaces()
-		.lowerFirst()
+const camelCase = (sentence: string): string => {
+	let result: string = removeSpaces(capCase(sentence))
+	result = result.charAt(0).toLowerCase()
+	+ result.slice(1)
+	return result
 }
-*/
+
+const pascelCase = (sentence: string): string => {
+	return removeSpaces(capCase(sentence))
+}
