@@ -20,7 +20,7 @@ const lowerWord = (word: string): string => {
 // ==TODO==
 // determine what `type` that a function is;
 // it is passed in as a parameter!
-const caseCase = (sentence: string, lambda: any) => {
+const caseCase = (sentence: string, lambda: any): string => {
 	let result: string = ''
 	const words: string[] = sentence.split(' ')
 	for (let word of words) {
@@ -75,15 +75,17 @@ const wiggleWord = (word: string): string => {
 
 // PROBLEM 4
 const removeSpaces = (word: string): string => {
-	// /\s selects any sort of whitespace character
+	// /\s+ selects any consecutive occurence of whitespace
 	// /g stands for a global search
-	return word.replace(/\s/g, '')
+	// replace it with empty string
+	return word.replace(/\s+/g, '')
 }
 
 // PROBLEM 5
 const trimSpaces = (word: string): string => {
 	// /\s+ selects any consecutive occurence of whitespace
 	// /g stands for a global search
+	// replace it with a single space
 	// trim removes whitespace before/after other characters
 	return word.replace(/\s+/g, ' ').trim()
 }
