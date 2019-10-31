@@ -9,6 +9,20 @@ test('capitalize a word', () => {
 	expect(after).toBe('Capitalize')
 })
 
+test('capitalize entire word', () => {
+	const before: string = 'capitalize'
+	const after: string = sdrow.upperWord(before)
+	expect(before).toBe('capitalize')
+	expect(after).toBe('CAPITALIZE')
+})
+
+test('decapitalize entire word', () => {
+	const before: string = 'LOWERCASE'
+	const after: string = sdrow.lowerWord(before)
+	expect(before).toBe('LOWERCASE')
+	expect(after).toBe('lowercase')
+})
+
 /*
 test('Upper- & Lower-first-word', () => {
 	const bfr = 'this is upper Word first'
