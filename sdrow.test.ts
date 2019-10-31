@@ -1,9 +1,8 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
-const problems = require('./problems.js')
+const sdrow = require('./sdrow.ts')
 
 test('sanity check', () => {})
 
+/*
 test('Upper- & Lower-first-word', () => {
 	const bfr = 'this is upper Word first'
 	const aft = 'This is upper Word first'
@@ -58,3 +57,4 @@ test('camelCase', () => {
 	const aft = 'iAmAMysteriousCamel'
 	expect(bfr.camelCase()).toBe(aft)
 })
+*/
