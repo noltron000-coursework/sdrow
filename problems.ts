@@ -4,10 +4,6 @@ const capWord = (word: string): string => {
 	+ word.slice(1).toLowerCase()
 }
 
-const uncapWord = (word: string): string => {
-	return word.toLowerCase()
-}
-
 const upperWord = (word: string): string => {
 	return word.toUpperCase()
 }
@@ -32,10 +28,6 @@ const caseCase = (sentence: string, lambda: any): string => {
 
 const capCase = (sentence: string): string => {
 	return caseCase(sentence, capWord)
-}
-
-const uncapCase = (sentence: string): string => {
-	return caseCase(sentence, uncapWord)
 }
 
 const upperCase = (sentence: string): string => {
