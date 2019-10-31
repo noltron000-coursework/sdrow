@@ -12,32 +12,6 @@ const lowerWord = (word: string): string => {
 	return word.toLowerCase()
 }
 
-// PROBLEM 2
-// ==TODO==
-// determine what `type` that a function is;
-// it is passed in as a parameter!
-const caseCase = (sentence: string, lambda: any): string => {
-	let result: string = ''
-	const words: string[] = sentence.split(' ')
-	for (let word of words) {
-		word = lambda(word)
-		result = result.concat(word, ' ')
-	}
-	return result
-}
-
-const capCase = (sentence: string): string => {
-	return caseCase(sentence, capWord)
-}
-
-const upperCase = (sentence: string): string => {
-	return caseCase(sentence, upperWord)
-}
-
-const lowerCase = (sentence: string): string => {
-	return caseCase(sentence, lowerWord)
-}
-
 // PROBLEM 3
 const jiggleWord = (word: string): string => {
 	let result: string = ''
@@ -80,6 +54,32 @@ const trimSpaces = (sentence: string): string => {
 	// `/\s+` selects consecutive occurences of whitespace.
 	// `/g` stands for a global search.
 	return sentence.replace(/\s+/g, ' ').trim()
+}
+
+// PROBLEM 2
+// ==TODO==
+// determine what `type` that a function is;
+// it is passed in as a parameter!
+const caseCase = (sentence: string, lambda: any): string => {
+	let result: string = ''
+	const words: string[] = sentence.split(' ')
+	for (let word of words) {
+		word = lambda(word)
+		result = result.concat(word, ' ')
+	}
+	return result
+}
+
+const capCase = (sentence: string): string => {
+	return caseCase(sentence, capWord)
+}
+
+const upperCase = (sentence: string): string => {
+	return caseCase(sentence, upperWord)
+}
+
+const lowerCase = (sentence: string): string => {
+	return caseCase(sentence, lowerWord)
 }
 
 // PROBLEM 7
