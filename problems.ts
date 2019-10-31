@@ -91,11 +91,6 @@ const trimSpaces = (sentence: string): string => {
 }
 
 /*
-// PROBLEM 6
-String.prototype.allCaps = function(): string {
-	return this.toUpperCase()
-}
-
 // PROBLEM 7
 String.prototype.kababCase = function(): string {
 	return this.toLowerCase()
