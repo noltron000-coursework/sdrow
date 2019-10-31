@@ -79,11 +79,17 @@ const lowerCase = (sentence: string): string => {
 
 const kababCase = (sentence: string): string => {
 	let result: string = trimSpaces(lowerCase(sentence))
+	// replace all spaces with hyphens.
+	// `/\s` selects one whitespace character unit.
+	// `/g` stands for a global search.
 	return result.replace(/\s/g, '-')
 }
 
 const snakeCase = (sentence: string): string => {
 	let result: string = trimSpaces(lowerCase(sentence))
+	// replace all spaces with underscores.
+	// `/\s` selects one whitespace character unit.
+	// `/g` stands for a global search.
 	return result.replace(/\s/g, '_')
 }
 
