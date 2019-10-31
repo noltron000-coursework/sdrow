@@ -1,89 +1,105 @@
-declare interface String {
-	upperFirst(): string
-	lowerFirst(): string
-	upperWord(): string
-	upperWiggle(): string
-	removeSpaces(): string
-	trimSpaces(): string
-	allCaps(): string
-	kababCase(): string
-	snakeCase(): string
-	camelCase(): string
+const capWord = (word: string): string => {
+	return word.charAt(0).toUpperCase()
+	+ word.slice(1).toLowerCase()
 }
 
-// PROBLEM 1
-String.prototype.upperFirst = function(): string {
-	return this.charAt(0).toUpperCase() + this.slice(1)
+const upperWord = (word: string): string => {
+	return word.toUpperCase()
 }
 
-String.prototype.lowerFirst = function(): string {
-	return this.charAt(0).toLowerCase() + this.slice(1)
+const lowerWord = (word: string): string => {
+	return word.toLowerCase()
 }
 
-// PROBLEM 2
-String.prototype.upperWord = function(): string {
-	const wordList: string[] = this.split(' ')
-	let finalString: string = ''
-	wordList.forEach((word: string) => {
-		const result = word.upperFirst()
-		finalString = finalString.concat(result, ' ')
-	})
-	return finalString.slice(0, -1)
-}
-
-// PROBLEM 3
-String.prototype.upperWiggle = function(): string {
-	let finalString = ''
-	Array.from(this).forEach((letter, index) => {
+const jiggleWord = (word: string): string => {
+	let result: string = ''
+	Array.from(word).forEach((letter, index) => {
 		if (index % 2 === 0) {
 			letter = letter.toUpperCase()
 		} else {
 			letter = letter.toLowerCase()
 		}
-		finalString = finalString.concat(letter)
+		result += letter
 	})
-	return finalString
+	return result
 }
 
-// PROBLEM 4
-String.prototype.removeSpaces = function(): string {
-	return this.replace(/\s/g, '')
+const wiggleWord = (word: string): string => {
+	let result: string = ''
+	Array.from(word).forEach((letter, index) => {
+		if (index % 2 === 1) {
+			letter = letter.toUpperCase()
+		} else {
+			letter = letter.toLowerCase()
+		}
+		result += letter
+	})
+	return result
 }
 
-// PROBLEM 5
-String.prototype.trimSpaces = function(): string {
-	return this.split(/\s+/)
-		.join(' ')
-		.trim()
+const removeSpaces = (sentence: string): string => {
+	// replace any number of spaces with an empty string.
+	// `/\s+` selects consecutive occurences of whitespace.
+	// `/g` stands for a global search.
+	return sentence.replace(/\s+/g, '')
 }
 
-// PROBLEM 6
-String.prototype.allCaps = function(): string {
-	return this.toUpperCase()
+const trimSpaces = (sentence: string): string => {
+	// replace any number of spaces with a single space.
+	// then, trim extra spaces before/after the sentence.
+	// `/\s+` selects consecutive occurences of whitespace.
+	// `/g` stands for a global search.
+	return sentence.replace(/\s+/g, ' ').trim()
 }
 
-// PROBLEM 7
-String.prototype.kababCase = function(): string {
-	return this.toLowerCase()
-		.split(/\s+/)
-		.join(' ')
-		.trim()
-		.replace(/\s+/g, '-')
+// ==TODO==
+// determine what `type` that a function is;
+// it is passed in as a parameter!
+const caseCase = (sentence: string, lambda: any): string => {
+	let result: string = ''
+	const words: string[] = sentence.split(' ')
+	for (let word of words) {
+		word = lambda(word)
+		result = result.concat(word, ' ')
+	}
+	return result
 }
 
-// PROBLEM 8
-String.prototype.snakeCase = function(): string {
-	return this.toLowerCase()
-		.split(/\s+/)
-		.join(' ')
-		.trim()
-		.replace(/\s+/g, '_')
+const capCase = (sentence: string): string => {
+	return caseCase(sentence, capWord)
 }
 
-// PROBLEM 9
-String.prototype.camelCase = function(): string {
-	return this.trimSpaces()
-		.upperWord()
-		.removeSpaces()
-		.lowerFirst()
+const upperCase = (sentence: string): string => {
+	return caseCase(sentence, upperWord)
+}
+
+const lowerCase = (sentence: string): string => {
+	return caseCase(sentence, lowerWord)
+}
+
+const kababCase = (sentence: string): string => {
+	let result: string = trimSpaces(lowerCase(sentence))
+	// replace all spaces with hyphens.
+	// `/\s` selects one whitespace character unit.
+	// `/g` stands for a global search.
+	return result.replace(/\s/g, '-')
+}
+
+const snakeCase = (sentence: string): string => {
+	let result: string = trimSpaces(lowerCase(sentence))
+	// replace all spaces with underscores.
+	// `/\s` selects one whitespace character unit.
+	// `/g` stands for a global search.
+	return result.replace(/\s/g, '_')
+}
+
+const camelCase = (sentence: string): string => {
+	let result: string = removeSpaces(capCase(sentence))
+	result = result.charAt(0).toLowerCase()
+	+ result.slice(1)
+	return result
+}
+
+const pascelCase = (sentence: string): string => {
+	return removeSpaces(capCase(sentence))
 }
