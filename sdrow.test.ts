@@ -1,9 +1,15 @@
-/* eslint-disable no-unused-vars */
-/* eslint-disable no-undef */
-const problems = require('./problems.js')
+import * as sdrow from './sdrow'
 
 test('sanity check', () => {})
 
+test('capitalize a word', () => {
+	const before: string = 'capitalize'
+	const after: string = sdrow.capWord(before)
+	expect(before).toBe('capitalize')
+	expect(after).toBe('Capitalize')
+})
+
+/*
 test('Upper- & Lower-first-word', () => {
 	const bfr = 'this is upper Word first'
 	const aft = 'This is upper Word first'
@@ -58,3 +64,4 @@ test('camelCase', () => {
 	const aft = 'iAmAMysteriousCamel'
 	expect(bfr.camelCase()).toBe(aft)
 })
+*/
