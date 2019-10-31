@@ -85,25 +85,29 @@ test('wiggleCase():\n\twiggle it up', () => {
 })
 
 test('kababCase():\n\t', () => {
-	const before: string = ''
-	const after: string = ''
-	expect(true).toBe(false)
+	const before: string = 'I am a MOSTLY lowercase sentence.'
+	const after: string = sdrow.kababCase(before)
+	expect(before).toBe('I am a MOSTLY lowercase sentence.')
+	expect(after).toBe('i-am-a-mostly-lowercase-sentence')
 })
 
 test('snakeCase():\n\t', () => {
-	const before: string = ''
-	const after: string = ''
-	expect(true).toBe(false)
+	const before: string = 'I am a MOSTLY lowercase sentence.'
+	const after: string = sdrow.snakeCase(before)
+	expect(before).toBe('I am a MOSTLY lowercase sentence.')
+	expect(after).toBe('i_am_a_mostly_lowercase_sentence')
 })
 
 test('camelCase():\n\t', () => {
-	const before: string = ''
-	const after: string = ''
-	expect(true).toBe(false)
+	const before: string = 'I am a MOSTLY lowercase sentence.'
+	const after: string = sdrow.camelCase(before)
+	expect(before).toBe('I am a MOSTLY lowercase sentence.')
+	expect(after).toBe('iAmAMostlyLowercaseSentence')
 })
 
 test('pascelCase():\n\t', () => {
-	const before: string = ''
-	const after: string = ''
-	expect(true).toBe(false)
+	const before: string = 'I am a MOSTLY lowercase sentence.'
+	const after: string = sdrow.pascalCase(before)
+	expect(before).toBe('I am a MOSTLY lowercase sentence.')
+	expect(after).toBe('IAmAMostlyLowercaseSentence')
 })

@@ -52,6 +52,18 @@ export const trimSpaces = (sentence: string): string => {
 	return sentence.replace(/\s+/g, ' ').trim()
 }
 
+export const removeNonAlpha = (sentence: string): string => {
+	// delete non-alpha characters, keeping spaces
+	// `[]` states characters can match these.
+	// `^` is the not-operator.
+	// `|` is the or-operator.
+	// `\w` selects alpha characters.
+	// `\s` selects space characters.
+	// `\d` selects digit characters.
+	// `/g` stands for a global search.
+	return sentence.replace(/[^\w\s]|\d/g, '')
+}
+
 // ==TODO==
 // determine what `type` that a function is;
 // it is passed in as a parameter!
@@ -86,28 +98,43 @@ export const wiggleCase = (sentence: string): string => {
 }
 
 export const kababCase = (sentence: string): string => {
-	let result: string = trimSpaces(lowerCase(sentence))
+	let result: string = sentence
+	result = lowerCase(result)
+	result = trimSpaces(result)
+	result = removeNonAlpha(result)
+	result = result.replace(/\s/g, '-')
 	// replace all spaces with hyphens.
 	// `/\s` selects one whitespace character unit.
 	// `/g` stands for a global search.
-	return result.replace(/\s/g, '-')
+	return result
 }
 
 export const snakeCase = (sentence: string): string => {
-	let result: string = trimSpaces(lowerCase(sentence))
+	let result: string = sentence
+	result = lowerCase(result)
+	result = trimSpaces(result)
+	result = removeNonAlpha(result)
+	result = result.replace(/\s/g, '_')
 	// replace all spaces with underscores.
 	// `/\s` selects one whitespace character unit.
 	// `/g` stands for a global search.
-	return result.replace(/\s/g, '_')
+	return result
 }
 
 export const camelCase = (sentence: string): string => {
-	let result: string = removeSpaces(capCase(sentence))
+	let result: string = sentence
+	result = capCase(result)
+	result = removeSpaces(result)
+	result = removeNonAlpha(result)
 	result = result.charAt(0).toLowerCase()
 	+ result.slice(1)
 	return result
 }
 
-export const pascelCase = (sentence: string): string => {
-	return removeSpaces(capCase(sentence))
+export const pascalCase = (sentence: string): string => {
+	let result: string = sentence
+	result = capCase(result)
+	result = removeSpaces(result)
+	result = removeNonAlpha(result)
+	return result
 }
