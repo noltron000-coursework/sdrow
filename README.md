@@ -1,12 +1,15 @@
-![](https://img.shields.io/github/issues/noltron000/library-challenge.svg)
-![](https://img.shields.io/github/forks/noltron000/library-challenge.svg)
-![](https://img.shields.io/github/stars/noltron000/library-challenge.svg)
-![](https://img.shields.io/github/license/noltron000/library-challenge.svg)
-[![Coverage Status](https://coveralls.io/repos/github/noltron000/library-challenge/badge.svg?branch=master)](https://coveralls.io/github/noltron000/library-challenge?branch=master)
-![](https://img.shields.io/twitter/url/https/github.com%2Fnoltron000%2Flibrary-challenge.svg)
+![](https://img.shields.io/github/issues/noltron000/sdrow.svg)
+![](https://img.shields.io/github/forks/noltron000/sdrow.svg)
+![](https://img.shields.io/github/stars/noltron000/sdrow.svg)
+![](https://img.shields.io/github/license/noltron000/sdrow.svg)
+[![Coverage Status](https://coveralls.io/repos/github/noltron000/sdrow/badge.svg?branch=master)](https://coveralls.io/github/noltron000/sdrow?branch=master)
+![](https://img.shields.io/twitter/url/https/github.com%2Fnoltron000%2Fsdrow.svg)
 
 # `SDORW`: super dangerous or ridiculous words
 ## check it out on [`npm`](https://www.npmjs.com/package/sdrow)!
+<!--
+!THIS BLOCK HAS BEEN INVALIDATED!
+
 ## Features
 1. `String.prototype.upperFirst( )` A function that uppercases the first character of string.
 	- Example Input: `i want this capitalized.`
@@ -50,3 +53,4 @@ let superString =
 	'wow! this project is    soooooooooooo   cool. Just amazing.    '
 console.log(superString.snakeCase())
 ```
+--->
