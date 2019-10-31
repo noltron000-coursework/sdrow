@@ -1,6 +1,6 @@
 {
 	"name": "sdrow",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "these are amazing utilities that everyone should use.",
 	"main": "problems.js",
 	"repository": {
