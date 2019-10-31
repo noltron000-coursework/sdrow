@@ -103,3 +103,22 @@ const camelCase = (sentence: string): string => {
 const pascelCase = (sentence: string): string => {
 	return removeSpaces(capCase(sentence))
 }
+
+export default {
+	capWord,
+	upperWord,
+	lowerWord,
+	jiggleWord,
+	wiggleWord,
+	removeSpaces,
+	trimSpaces,
+	capCase,
+	upperCase,
+	lowerCase,
+	kababCase,
+	snakeCase,
+	camelCase,
+	pascelCase,
+	// // these are just helper functions
+	// caseCase,
+}

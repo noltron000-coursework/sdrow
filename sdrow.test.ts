@@ -1,6 +1,13 @@
-const sdrow = require('./sdrow.ts')
+import * as sdrow from './sdrow'
 
 test('sanity check', () => {})
+
+test('capitalize a word', () => {
+	const before: string = 'capitalize'
+	const after: string = sdrow.capWord(before)
+	expect(before).toBe('capitalize')
+	expect(after).toBe('Capitalize')
+})
 
 /*
 test('Upper- & Lower-first-word', () => {
