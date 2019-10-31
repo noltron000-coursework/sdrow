@@ -65,7 +65,7 @@ export const caseCase = (sentence: string, lambda: any): string => {
 	return result
 }
 
-export const capCase = (sentence: string): string => {
+const capCase = (sentence: string): string => {
 	return caseCase(sentence, capWord)
 }
 
@@ -74,6 +74,14 @@ export const upperCase = (sentence: string): string => {
 }
 
 export const lowerCase = (sentence: string): string => {
+	return caseCase(sentence, lowerWord)
+}
+
+export const jiggleCase = (sentence: string): string => {
+	return caseCase(sentence, lowerWord)
+}
+
+export const wiggleCase = (sentence: string): string => {
 	return caseCase(sentence, lowerWord)
 }
 

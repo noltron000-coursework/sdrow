@@ -2,6 +2,8 @@ import * as sdrow from './sdrow'
 
 test('sanity check', () => {})
 
+// *BELOW ARE ALL WORD-BASED FUNCTIONS* //
+
 test('capWord():\n\tcapitalize a word', () => {
 	const before: string = 'capitalize'
 	const after: string = sdrow.capWord(before)
@@ -37,23 +39,23 @@ test('wiggleWord():\n\twIgGlIfY a wOrD. nUtSo!', () => {
 	expect(after).toBe('wIgGlY')
 })
 
-/*
-test('Upper- every words', () => {
-	const bfr = 'this is upper EVERY word'
-	const aft = 'This Is Upper EVERY Word'
-	expect(bfr.upperWord()).toBe(aft)
+// *THESE TWO ARE SPACE-ORIENTED HELPER FUNCTIONS* //
+
+test('removeSpaces():\n\tspaces...begone!', () => {
+	const before: string = '   this string  is full of space'
+	const after: string = sdrow.removeSpaces(before)
+	expect(before).toBe('   this string  is full of space')
+	expect(after).toBe('thisstringisfullofspace')
 })
 
-test('Wiggly words', () => {
-	const bfr = 'This is WIGGLY'
-	const aft = 'ThIs iS WiGgLy'
-	expect(bfr.upperWiggle()).toBe(aft)
+test('trimSpaces():\n\t(extra) spaces...begone!', () => {
+	const before: string = '   this string  is full of space'
+	const after: string = sdrow.trimSpaces(before)
+	expect(before).toBe('   this string  is full of space')
+	expect(after).toBe('this string is full of space')
 })
 
-test('no more spaces :D', () => {
-	const bfr = '   hello  world    '
-	const aft = 'helloworld'
-	expect(bfr.removeSpaces()).toBe(aft)
+// *BELOW ARE ALL SENTENCE-BASED FUNCTIONS* //
 })
 
 test('trim extra spaces', () => {
