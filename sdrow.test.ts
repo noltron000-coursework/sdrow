@@ -56,35 +56,50 @@ test('trimSpaces():\n\t(extra) spaces...begone!', () => {
 })
 
 // *BELOW ARE ALL SENTENCE-BASED FUNCTIONS* //
+test('upperCase():\n\t', () => {
+	const before: string = ''
+	const after: string = ''
+	expect(true).toBe(false)
 })
 
-test('trim extra spaces', () => {
-	const bfr = '   hello  world   again   '
-	const aft = 'hello world again'
-	expect(bfr.trimSpaces()).toBe(aft)
+test('lowerCase():\n\t', () => {
+	const before: string = ''
+	const after: string = ''
+	expect(true).toBe(false)
 })
 
-test('lets get all caps', () => {
-	const bfr = ' asdf cappy!'
-	const aft = ' ASDF CAPPY!'
-	expect(bfr.allCaps()).toBe(aft)
+test('jiggleCase():\n\t', () => {
+	const before: string = ''
+	const after: string = ''
+	expect(true).toBe(false)
 })
 
-test('kabab case', () => {
-	const bfr = ' Kabab Case '
-	const aft = 'kabab-case'
-	expect(bfr.kababCase()).toBe(aft)
+test('wiggleCase():\n\t', () => {
+	const before: string = ''
+	const after: string = ''
+	expect(true).toBe(false)
 })
 
-test('snake_case', () => {
-	const bfr = 'HELLO WORLD WOAH THIS WORKS '
-	const aft = 'hello_world_woah_this_works'
-	expect(bfr.snakeCase()).toBe(aft)
+test('kababCase():\n\t', () => {
+	const before: string = ''
+	const after: string = ''
+	expect(true).toBe(false)
 })
 
-test('camelCase', () => {
-	const bfr = 'I am a mysterious camel'
-	const aft = 'iAmAMysteriousCamel'
-	expect(bfr.camelCase()).toBe(aft)
+test('snakeCase():\n\t', () => {
+	const before: string = ''
+	const after: string = ''
+	expect(true).toBe(false)
 })
-*/
+
+test('camelCase():\n\t', () => {
+	const before: string = ''
+	const after: string = ''
+	expect(true).toBe(false)
+})
+
+test('pascelCase():\n\t', () => {
+	const before: string = ''
+	const after: string = ''
+	expect(true).toBe(false)
+})
