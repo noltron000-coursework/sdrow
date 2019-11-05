@@ -2,7 +2,7 @@
 ![](https://img.shields.io/github/forks/noltron000/sdrow.svg)
 ![](https://img.shields.io/github/stars/noltron000/sdrow.svg)
 ![](https://img.shields.io/github/license/noltron000/sdrow.svg)
-[![Coverage Status](https://coveralls.io/repos/github/noltron000/sdrow/badge.svg)](https://coveralls.io/github/noltron000/sdrow)
+[![Coverage Status](https://coveralls.io/repos/github/noltron000/sdrow/badge.svg?branch=master)](https://coveralls.io/github/noltron000/sdrow?branch=master)
 ![](https://img.shields.io/twitter/url/https/github.com%2Fnoltron000%2Fsdrow.svg)
 
 # `SDORW`: super dangerous or ridiculous words
