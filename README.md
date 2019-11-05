@@ -1,7 +1,7 @@
 ![# Issues](https://img.shields.io/github/issues/noltron000/sdrow.svg)
 ![# Forks](https://img.shields.io/github/forks/noltron000/sdrow.svg)
 ![# Stars](https://img.shields.io/github/stars/noltron000/sdrow.svg)
-![License](https://img.shields.io/github/license/noltron000/sdrow.svg)
+[![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Coverage Status](https://coveralls.io/repos/github/noltron000/sdrow/badge.svg?branch=master)](https://coveralls.io/github/noltron000/sdrow?branch=master)
 ![Share on Twitter](https://img.shields.io/twitter/url/https/github.com%2Fnoltron000%2Fsdrow.svg)
 
