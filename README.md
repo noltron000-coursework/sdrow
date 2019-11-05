@@ -5,7 +5,6 @@
 [![Coverage Status](https://coveralls.io/repos/github/noltron000/sdrow/badge.svg?branch=master)](https://coveralls.io/github/noltron000/sdrow?branch=master)
 
 [![GitHub](https://img.shields.io/static/v1?style=social&logo=github&label=GitHub&message=fork)](https://github.com/noltron000/sdrow)
-
 [![NPM](https://img.shields.io/static/v1?style=social&logo=npm&label=NPM&message=install)](https://www.npmjs.com/package/sdrow)
 
 # `SDORW`: super dangerous or ridiculous words
