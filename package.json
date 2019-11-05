@@ -22,12 +22,14 @@
 	"homepage": "https://github.com/noltron000/library-challenge#readme",
 	"devDependencies": {
 		"@types/jest": "^24.0.21",
+		"coveralls": "^3.0.7",
 		"jest": "^24.9.0",
 		"ts-jest": "^24.1.0",
 		"typescript": "^3.6.4"
 	},
 	"dependencies": {},
 	"scripts": {
-		"test": "jest --coverage"
+		"test": "jest --coverage",
+		"test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
 	}
 }
