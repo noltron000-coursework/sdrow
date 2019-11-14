@@ -2,7 +2,12 @@
 	"name": "sdrow",
 	"version": "0.2.2",
 	"description": "these are amazing utilities that everyone should use.",
-	"main": "problems.js",
+	"main": "sdrow.ts",
+	"module": "umd/sdrow.js",
+	"types": "umd/sdrow.d.ts",
+	"files": [
+		"umd"
+	],
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/noltron000/sdrow.git"
@@ -25,12 +30,14 @@
 		"coveralls": "^3.0.7",
 		"jest": "^24.9.0",
 		"rollup": "^1.27.0",
+		"rollup-plugin-typescript2": "^0.25.2",
 		"ts-jest": "^24.1.0",
 		"typescript": "^3.6.4"
 	},
 	"dependencies": {},
 	"scripts": {
 		"test": "jest --coverage",
-		"test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls"
+		"test:coveralls": "jest --coverage --coverageReporters=text-lcov | coveralls",
+		"rollup": "rollup -c"
 	}
 }
