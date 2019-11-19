@@ -2,9 +2,9 @@
 	"name": "sdrow",
 	"version": "0.2.2",
 	"description": "these are amazing utilities that everyone should use.",
-	"main": "sdrow.ts",
-	"module": "umd/sdrow.js",
-	"types": "umd/sdrow.d.ts",
+	"source": "sdrow.ts",
+	"main": "umd/sdrow.js",
+	"module": "esm/sdrow.js",
 	"files": [
 		"umd"
 	],
@@ -30,7 +30,9 @@
 		"coveralls": "^3.0.7",
 		"jest": "^24.9.0",
 		"rollup": "^1.27.0",
+		"rollup-plugin-terser": "^5.1.2",
 		"rollup-plugin-typescript2": "^0.25.2",
+		"terser": "^4.4.0",
 		"ts-jest": "^24.1.0",
 		"typescript": "^3.6.4"
 	},

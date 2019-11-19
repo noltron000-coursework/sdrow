@@ -7,8 +7,11 @@
 [![GitHub](https://img.shields.io/static/v1?style=social&logo=github&label=GitHub&message=fork)](https://github.com/noltron000/sdrow)
 [![NPM](https://img.shields.io/static/v1?style=social&logo=npm&label=NPM&message=install)](https://www.npmjs.com/package/sdrow)
 
-# `SDORW`: super dangerous or ridiculous words
-## check it out on [`npm`](https://www.npmjs.com/package/sdrow)!
+# `SDROW`: super dangerous or ridiculous words
+> check it out on [`npm`](https://www.npmjs.com/package/sdrow)!
+
+`SDROW` is WORDS spelt backwards.
+
 <!--
 !THIS BLOCK HAS BEEN INVALIDATED!
 
