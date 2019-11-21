@@ -1,9 +1,10 @@
 ![# Issues](https://img.shields.io/github/issues/noltron000/sdrow.svg)
 ![# Forks](https://img.shields.io/github/forks/noltron000/sdrow.svg)
 ![# Stars](https://img.shields.io/github/stars/noltron000/sdrow.svg)
-![Travis CI](https://api.travis-ci.com/noltron000/noltron000.github.io.svg?branch=deploy)
 [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+![Travis CI](https://api.travis-ci.com/noltron000/noltron000.github.io.svg?branch=deploy)
 [![Coverage Status](https://coveralls.io/repos/github/noltron000/sdrow/badge.svg?branch=master)](https://coveralls.io/github/noltron000/sdrow?branch=master)
+
 [![GitHub](https://img.shields.io/static/v1?style=social&logo=github&label=GitHub&message=fork)](https://github.com/noltron000/sdrow)
 [![NPM](https://img.shields.io/static/v1?style=social&logo=npm&label=NPM&message=install)](https://www.npmjs.com/package/sdrow)
 
