@@ -67,7 +67,7 @@ export const removeNonAlpha = (sentence: string): string => {
 // ==TODO==
 // determine what `type` that a function is;
 // it is passed in as a parameter!
-export const caseCase = (sentence: string, lambda: any): string => {
+const caseCase = (sentence: string, lambda: any): string => {
 	let result: string = ''
 	const words: string[] = sentence.split(' ')
 	for (let word of words) {
@@ -77,7 +77,7 @@ export const caseCase = (sentence: string, lambda: any): string => {
 	return result.trim()
 }
 
-const capCase = (sentence: string): string => {
+export const capCase = (sentence: string): string => {
 	return caseCase(sentence, capWord)
 }
 
