@@ -1,6 +1,6 @@
 {
 	"name": "sdrow",
-	"version": "0.3.1",
+	"version": "0.3.2",
 	"description": "these are amazing string utilities that everyone should use.",
 	"source": "source/sdrow.ts",
 	"main": "umd/sdrow.js",
