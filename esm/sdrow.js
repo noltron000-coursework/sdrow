@@ -124,4 +124,4 @@ const pascalCase = (sentence) => {
     return result;
 };
 
-export { camelCase, capWord, caseCase, jiggleCase, jiggleWord, kababCase, lowerCase, lowerWord, pascalCase, removeNonAlpha, removeSpaces, snakeCase, trimSpaces, upperCase, upperWord, wiggleCase, wiggleWord };
+export { camelCase, capCase, capWord, jiggleCase, jiggleWord, kababCase, lowerCase, lowerWord, pascalCase, removeNonAlpha, removeSpaces, snakeCase, trimSpaces, upperCase, upperWord, wiggleCase, wiggleWord };
